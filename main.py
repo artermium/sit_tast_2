@@ -1,10 +1,13 @@
 def fib(n):
-    if n == 1:
-        return 0
-    if n == 2:
-        return 1
-    return fib(n - 1) + fib(n - 2)
+    first, second = 0, 1
+    print(first)
+    n -= 1
+    while n:
+        print(second)
+        second += first
+        first = second - first
+        n -= 1
 
 
 print("Hello, World!")
-print(fib(10))
+fib(10)
